@@ -159,7 +159,7 @@ function ControlTray({
           <AudioPulse volume={volume} active={connected} hover={false} />
         </div>
 
-        {supportsVideo && (
+        {/* {supportsVideo && (
           <>
             <MediaStreamButton
               isStreaming={screenCapture.isStreaming}
@@ -176,7 +176,7 @@ function ControlTray({
               offIcon="videocam"
             />
           </>
-        )}
+        )} */}
         {children}
       </nav>
 

@@ -59,7 +59,7 @@ export default function SidePanel() {
   return (
     <div className={`side-panel ${open ? "open" : ""}`}>
       <header className="top">
-        <h2>Console</h2>
+        <h2>Logs</h2>
         {open ? (
           <button className="opener" onClick={() => setOpen(false)}>
             <RiSidebarFoldLine color="#b4b8bb" />
@@ -70,7 +70,7 @@ export default function SidePanel() {
           </button>
         )}
       </header>
-      <section className="indicators">
+      {/* <section className="indicators">
         <Select
           className="react-select"
           classNamePrefix="react-select"
@@ -103,7 +103,7 @@ export default function SidePanel() {
             ? `🔵${open ? " Streaming" : ""}`
             : `⏸️${open ? " Paused" : ""}`}
         </div>
-      </section>
+      </section> */}
       <div className="side-panel-container" ref={loggerRef}>
         <Logger
           filter={(selectedOption?.value as LoggerFilterType) || "none"}
